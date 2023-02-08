@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Nanum+Gothic&display=swap');
+
+p {
+  font-family:'Nanum Gothic', sans-serif;
+  color: #283618;
+  font-size: 15px;
+  line-height: 20px;
+  margin:25px;
+}
+
+h1, h2 {
+  color: #dda15e;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+h3 {
+  color: #dda15e;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 35px;
+}
+
+a {
+  color: #bc6c25;
+  text-decoration:none;
+  font-family:'Manrope', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: .4s;
+    color:#f6a6bb;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.img-circle {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card {
+  margin: 20px;
+  padding: 30px 50px;
+  border: .4px solid #dda15e;
+  background-color: #fefae0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card-white {
+    background: white;
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    width: auto;
+    text-align: center;
+    padding: 24px;
+    margin: 8px;
+}
+
+.card-white img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#button-white {
+  background-color:white;
+  padding:10px 50px;
+  border-radius:30px;
+}
+
+#button-white:hover {
+  background-color: #f6a6bb;
+  color: white;
+  transition: .4s;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 30px;
+  list-style:none;
+  padding-left: 0px;
+  width:30px;
+  font-size: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.bouton {
+  display: inline-block;
+  min-width: 260px;
+  margin: 0,5rem;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+#menu {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: auto;
+  justify-content: space-around;
+  background-color: white;
+}
+
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
